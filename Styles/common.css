@@ -1,0 +1,121 @@
+html {
+    scroll-behavior: smooth;
+    cursor: url('../Images/icons/mouse.png'), auto;
+}
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4rem;
+}
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+}
+h3 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8rem;
+}
+h4 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.6rem;
+}
+p {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+a {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+    color: #faf6e5;
+    text-decoration: none;
+}
+.copyright {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.8rem;
+    color: #faf6e5;
+}
+.spacer {
+    height: 80px;
+    width: 100%;
+}
+.spacer60 {
+    height: 60px;
+    width: 100%;
+}
+
+/* Button styles */
+#topbtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: #faf6e5;
+    background-color: #7e9292;
+    padding: 8px;
+    font-size: 20px;
+    opacity: 1;
+}
+#topbtn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 38.5rem) {
+    body {
+        width: 100vw;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.1rem;
+    }
+    h4 {
+        font-size: 1.1rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    a {
+        font-size: 1rem;
+    }
+    .copyright {
+        font-size: 0.6rem;
+    }
+    .spacer {
+        height: 30px;
+    }
+    .spacer60 {
+        height: 30px;
+    }
+    #topbtn {
+        right: 20px;
+    }
+}

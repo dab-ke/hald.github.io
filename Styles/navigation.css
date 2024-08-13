@@ -1,0 +1,109 @@
+.navigation-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    padding: 0 20px;
+    z-index: 1000;
+}
+.navigation-wrapper.scrolled {
+    background-color: #0c0c0c69;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.banner-image img {
+    height: 4rem;
+    width: auto;
+}
+.links-wrapper {
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+}
+.nav-link {
+    position: relative;
+}
+.links-wrapper > .nav-link {
+    display: inline-block;
+}
+.links-wrapper > .nav-link a {
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #faf6e5;
+    padding: 0.2rem 1.2rem;
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+}
+.links-wrapper > .nav-link a:hover {
+    color: #dae8f4; 
+}
+.links-wrapper > .nav-link a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #927e7e;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+.links-wrapper > .nav-link a:hover::before {
+    transform: scaleX(1);
+}
+
+/* dropdown menu styles */
+.dropdown-menu {
+    position: relative;
+    display: none;
+}
+.dropdown-menu:focus-within > .dropdown-content {
+    display: block;
+}
+.dropdown-menu > .icon {
+    padding: 30px 20px;
+    font-size: 24px;
+    border: none;
+    color: #faf6e5;
+    background: transparent;
+}
+.dropdown-menu > .icon:hover {
+    cursor: pointer;
+}
+.dropdown-menu > .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #0c0c0c;
+    min-width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    height: 100vh;
+}
+.dropdown-menu > .dropdown-content > .dropdown-link a {
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 38.5rem) {
+    .navigation-wrapper {
+        padding: 0px;
+        width: 100vw;
+    }
+    .banner-image img {
+        height: 2.5rem;
+    }
+    .navigation-wrapper > .links-wrapper {
+        display: none;
+    }
+    .dropdown-menu {
+        display: inline-block;
+    }
+
+}

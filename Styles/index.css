@@ -130,7 +130,7 @@
     scrollbar-color: #7e7e92 #f1f1f1;
 }
 .experts-partners-section > .partners-section h3 {
-    padding: 0 110px;
+    padding: 0 18px;
 }
 .experts-partners-section > .partners-section > .partners > .partner {
     scroll-snap-align: center;
@@ -245,7 +245,7 @@
     .experts-partners-section > .experts-section > .experts {
         gap: 1rem;
         width: 10rem;
-        margin: 10px 210px;
+        margin: 10px 108px;
         overflow: hidden;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
@@ -266,7 +266,7 @@
         gap: 0.8rem;
         width: 15rem;
         padding-bottom: 0.5rem;
-        margin: 30px 170px;
+        margin: 30px 68px;
     }
     .experts-partners-section > .partners-section > .partners > .partner {
         padding: 20px 30px;
